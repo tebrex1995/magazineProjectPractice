@@ -2,17 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <link href="style.css" rel="stylesheet" />
     <title>The Basic Language of the web: HTML</title>
   </head>
 
   <body>
-    <!-- <h1>The Basic Language of the web: HTML</h1>
-    <h2>The Basic Language of the web: HTML</h2>
-    <h3>The Basic Language of the web: HTML</h3>
-    <h4>The Basic Language of the web: HTML</h4>
-    <h5>The Basic Language of the web: HTML</h5>
-    <h6>The Basic Language of the web: HTML</h6> -->
-    <header>
+    <header class="main-header">
       <h1>📘 The Code Magazine</h1>
 
       <nav>
@@ -32,7 +27,9 @@
           width="50"
           height="50"
         />
-        <p>Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027</p>
+        <p id="author">
+          Posted by <strong>Laura Jones</strong> on Monday, June 21st 2027
+        </p>
         <img
           src="images/post-img.jpg"
           alt="HTML code on a screen"
@@ -96,12 +93,10 @@
         <li>To have fun 😃</li>
       </ul>
       <p>Hopefully you learned something new here. See you next time!</p>
-
-      <footer>Copyright &copy; 2023 by The Code Magazine</footer>
     </article>
     <aside>
-      <h3>Related posts</h3>
-      <ul>
+      <h4>Related posts</h4>
+      <ul class="related">
         <li>
           <img
             src="images/related-1.jpg"
@@ -110,7 +105,7 @@
             height="75"
           />
           <a href="#">How to Learn Web Development</a>
-          <p>By Jonas Schmedtman</p>
+          <p class="related-author">By Jonas Schmedtman</p>
         </li>
         <li>
           <img
@@ -121,7 +116,7 @@
           />
           <a href="#">The Uknown Powers of CSS</a>
         </li>
-        <p>By Jim Dilion</p>
+        <p class="related-author">By Jim Dilion</p>
 
         <li>
           <img
@@ -130,9 +125,12 @@
             width="75"
             height="75"
           /><a href="#">Why JavaScript is Awesome</a>
-          <p>By Matilda</p>
+          <p class="related-author">By Matilda</p>
         </li>
       </ul>
     </aside>
+    <footer>
+      <p id="copyright">Copyright &copy; 2023 by The Code Magazine.</p>
+    </footer>
   </body>
 </html>
